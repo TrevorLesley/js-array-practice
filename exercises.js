@@ -5,8 +5,18 @@
 
 // Put your answer below -------------------------
 
+let array = [];
 
+function newArray(string, i) {
+    for (let j = 0; j < i; j++) {
+        // console.log(array.splice(0, 0, string));
+        array.push(string);
+    }
+    // return array
+    console.log(array);
+}
 
+newArray('Holy', 3);
 
 
 
@@ -23,7 +33,9 @@
 
 // Put your answer below -------------------------
 
+function revArray() {
 
+}
 
 
 
