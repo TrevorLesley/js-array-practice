@@ -5,18 +5,18 @@
 
 // Put your answer below -------------------------
 
-let array = [];
+let array1 = [];
 
-function newArray(string, i) {
+function newArray1(string, i) {
     for (let j = 0; j < i; j++) {
         // console.log(array.splice(0, 0, string));
-        array.push(string);
+        array1.push(string);
     }
     // return array
-    console.log(array);
+    console.log(array1);
 }
 
-newArray('Holy', 3);
+newArray1('Holy', 3);
 
 
 
@@ -33,10 +33,16 @@ newArray('Holy', 3);
 
 // Put your answer below -------------------------
 
-function revArray() {
+let array2 = ['a', 'b', 'c', 'd'];
 
+function revArray() {
+    let yarra2 = array2.slice().reverse();
+    // return yarra2;
+    console.log(array2);
+    console.log(yarra2);
 }
 
+revArray();
 
 
 
