@@ -82,7 +82,8 @@ removeFalseys(arrayOriginal);
 // -----------------------------------------------
 
 // ---------------------
-// Define a function that takes an array of nested arrays and returns an object composed of propeties equal to each nested array
+// Define a function that takes an array of nested arrays and returns an object 
+// composed of properties equal to each nested array
 // const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
 // returns { name: 'Charlie', color: 'brown', age: 10 };
 // ---------------------
@@ -90,6 +91,15 @@ removeFalseys(arrayOriginal);
 // Put your answer below -------------------------
 
 const bigArray = [['name', 'Charlie'], ['color', 'brown'], ['age', '10']];
+
+function makeObject(bigArray) {
+    let newObject = Object.fromEntries(bigArray);
+    console.log(newObject);
+    return newObject;
+};
+
+makeObject(bigArray);
+
 
 
 
