@@ -141,10 +141,10 @@ removeDuplicates(originalArray);
 
 // Put your answer below -------------------------
 
-Arr1 = [1, 2, 3, 4];
-Arr2 = [4, 3, 2, 1];
-Arr3 = [5, 6, 7, 8];
-Arr4 = [4, 0, 1, 9];
+Array1 = [1, 2, 3, 4];
+Array2 = [4, 3, 2, 1];
+Array3 = [5, 6, 7, 8];
+Array4 = [4, 0, 1, 9];
 
 
 function compareArrays(arr1, arr2) {
@@ -167,8 +167,8 @@ function compareArrays(arr1, arr2) {
     // arr2.sort();
 }
 
-compareArrays(Arr1, Arr2);
-compareArrays(Arr3, Arr4);
+compareArrays(Array1, Array2);
+compareArrays(Array3, Array4);
 
 
 
