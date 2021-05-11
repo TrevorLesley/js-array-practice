@@ -79,6 +79,8 @@ removeFalseys(arrayOriginal);
 
 
 
+
+
 // -----------------------------------------------
 
 // ---------------------
@@ -117,7 +119,7 @@ function removeDuplicates(originalArray) {
     const uniqueSet = new Set(originalArray);
     const backToArray = [...uniqueSet];
     console.log('backToArray', backToArray);
-}
+};
 
 removeDuplicates(originalArray);
 
@@ -129,7 +131,8 @@ removeDuplicates(originalArray);
 // -----------------------------------------------
 
 // ---------------------
-// Define a function that takes two arrays and returns true if they have identical values (order does not matter), it should return false otherwise
+// Define a function that takes two arrays and returns true if they have 
+// identical values (order does not matter), it should return false otherwise
 // [1,2,3,4] and [1,2,3,4] should return true
 // [1,2,3,4,5] and [1,2,3,4] should return false
 // [1,2,3,4] and [1,2,3,4,4] should return false
@@ -138,8 +141,34 @@ removeDuplicates(originalArray);
 
 // Put your answer below -------------------------
 
+Arr1 = [1, 2, 3, 4];
+Arr2 = [4, 3, 2, 1];
+Arr3 = [5, 6, 7, 8];
+Arr4 = [4, 0, 1, 9];
 
 
+function compareArrays(arr1, arr2) {
+    if (arr1.length !== arr2.length) {
+        return false;
+    }
+    arr1.sort(function (a, b) {
+        return a - b;
+    });
+    arr2.sort(function (a, b) {
+        return a - b;
+    });
+
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] !== arr2[i]) {
+            return false;
+        }
+    }
+    // arr1.sort();
+    // arr2.sort();
+}
+
+compareArrays(Arr1, Arr2);
+compareArrays(Arr3, Arr4);
 
 
 
