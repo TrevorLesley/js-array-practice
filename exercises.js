@@ -102,14 +102,6 @@ makeObject(bigArray);
 
 
 
-
-
-
-
-
-
-
-
 // -----------------------------------------------
 
 // ---------------------
@@ -119,9 +111,15 @@ makeObject(bigArray);
 
 // Put your answer below -------------------------
 
+originalArray = [1, 2, 3, 4, 5, 4, 3];
 
+function removeDuplicates(originalArray) {
+    const uniqueSet = new Set(originalArray);
+    const backToArray = [...uniqueSet];
+    console.log('backToArray', backToArray);
+}
 
-
+removeDuplicates(originalArray);
 
 
 
