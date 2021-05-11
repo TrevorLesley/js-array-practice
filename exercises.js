@@ -58,12 +58,24 @@ revArray();
 
 // Put your answer below -------------------------
 
+let arrayOriginal = ['', 1, 0, 'true']
 
+function removeFalseys(array3) {
+    let newArray = [];
 
+    arrayOriginal.forEach(element => {
+        console.log("Item before if check", element);
+        if (element != '' || null || undefined || NaN || 0 || false) {
+            console.log("Taking out item", element);
+            newArray.push(element);
+        }
+    });
 
+    console.log("newArray", newArray);
+    return newArray;
+}
 
-
-
+removeFalseys(arrayOriginal);
 
 
 
@@ -76,6 +88,8 @@ revArray();
 // ---------------------
 
 // Put your answer below -------------------------
+
+const bigArray = [['name', 'Charlie'], ['color', 'brown'], ['age', '10']];
 
 
 
